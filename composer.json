@@ -1,0 +1,36 @@
+{
+    "name": "zhengguoze/myWeather",
+    "description": "天气api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhengguoze",
+            "email": "zhengguoze@zhuanzhuan.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zhengguoze\\MyWeather\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zhengguoze\\MyWeather\\Tests": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "mockery/mockery": "^1.3"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zhengguoze\\MyWeather\\ServiceProvider"
+            ]
+        }
+    }
+}
